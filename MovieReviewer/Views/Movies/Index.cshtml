@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MovieReviewer.Model.Movies>
+@using MovieReviewer.Model;
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<h1>Movies</h1>
+<p>
+    <a asp-action="Create"><button class="btn btn-outline-primary">Create New Movie</button></a>
+</p>
+<div style="margin-top: 20px; margin-bottom: 10px;">
+    <partial name="_MovieFilter" model="new MovieFilterModel()" />
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </th>
+            <th>
+                Website Rating
+            </th>
+            <th>
+                Reviews
+            </th>
+            <th>Edit | Details | Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.ID">@Html.DisplayFor(modelItem => item.Title)</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Score) / 10
+            </td>
+            <td>
+                <a asp-controller="Reviews" asp-action="" asp-route-id="@item.ID">Reviews</a>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+            }
+    </tbody>
+</table>

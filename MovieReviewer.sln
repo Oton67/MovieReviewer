@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieReviewer", "MovieReviewer\MovieReviewer.csproj", "{D73285DC-EE1E-40B4-A3BD-200A33494512}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23905CE1-09CD-4534-86BF-897E69AC05AA} = {23905CE1-09CD-4534-86BF-897E69AC05AA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReviewer.DAL", "MovieReviewer.DAL\MovieReviewer.DAL.csproj", "{23905CE1-09CD-4534-86BF-897E69AC05AA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F180D9D2-C0B1-4FC5-B351-6E8195400E4E} = {F180D9D2-C0B1-4FC5-B351-6E8195400E4E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReviewer.Model", "MovieReviewer.Model\MovieReviewer.Model.csproj", "{F180D9D2-C0B1-4FC5-B351-6E8195400E4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D73285DC-EE1E-40B4-A3BD-200A33494512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73285DC-EE1E-40B4-A3BD-200A33494512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73285DC-EE1E-40B4-A3BD-200A33494512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73285DC-EE1E-40B4-A3BD-200A33494512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23905CE1-09CD-4534-86BF-897E69AC05AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23905CE1-09CD-4534-86BF-897E69AC05AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23905CE1-09CD-4534-86BF-897E69AC05AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23905CE1-09CD-4534-86BF-897E69AC05AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F180D9D2-C0B1-4FC5-B351-6E8195400E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F180D9D2-C0B1-4FC5-B351-6E8195400E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F180D9D2-C0B1-4FC5-B351-6E8195400E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F180D9D2-C0B1-4FC5-B351-6E8195400E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2708D346-0694-49E3-B62E-E0D66ADFE9AC}
+	EndGlobalSection
+EndGlobal
